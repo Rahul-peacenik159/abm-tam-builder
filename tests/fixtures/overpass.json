@@ -1,0 +1,56 @@
+{
+ "elements": [
+  {
+   "type": "node",
+   "id": 1,
+   "lat": 32.78,
+   "lon": -96.8,
+   "tags": {
+    "name": "The Adolphus",
+    "tourism": "hotel",
+    "website": "https://www.adolphus.com/",
+    "addr:city": "Dallas",
+    "addr:state": "TX"
+   }
+  },
+  {
+   "type": "way",
+   "id": 2,
+   "center": {
+    "lat": 32.8,
+    "lon": -96.79
+   },
+   "tags": {
+    "name": "Hilton Dallas Lincoln Centre",
+    "tourism": "hotel",
+    "brand": "Hilton",
+    "website": "https://www.hilton.com/en/hotels/dallctf/",
+    "addr:city": "Dallas"
+   }
+  },
+  {
+   "type": "node",
+   "id": 3,
+   "tags": {
+    "name": "Hotel Without Site",
+    "tourism": "hotel"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4,
+   "tags": {
+    "name": "Adolphus Annex",
+    "tourism": "hotel",
+    "contact:website": "adolphus.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 5,
+   "tags": {
+    "tourism": "hotel"
+   }
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "results": {
+  "bindings": [
+   {
+    "item": {
+     "value": "http://www.wikidata.org/entity/Q1"
+    },
+    "itemLabel": {
+     "value": "Acme Software"
+    },
+    "website": {
+     "value": "https://acme.example"
+    },
+    "employees": {
+     "value": "1200"
+    },
+    "countryLabel": {
+     "value": "United States"
+    },
+    "hqLabel": {
+     "value": "Austin"
+    }
+   },
+   {
+    "item": {
+     "value": "http://www.wikidata.org/entity/Q1"
+    },
+    "itemLabel": {
+     "value": "Acme Software"
+    },
+    "website": {
+     "value": "https://acme.example"
+    },
+    "employees": {
+     "value": "900"
+    }
+   },
+   {
+    "item": {
+     "value": "http://www.wikidata.org/entity/Q2"
+    },
+    "itemLabel": {
+     "value": "Tiny Co"
+    },
+    "website": {
+     "value": "https://tiny.example"
+    },
+    "employees": {
+     "value": "10"
+    }
+   }
+  ]
+ }
+}

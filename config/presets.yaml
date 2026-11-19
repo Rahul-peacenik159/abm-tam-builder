@@ -1,0 +1,53 @@
+# Ready-made account universes. Run with:  python -m tam_builder build --preset hotels-dallas
+# Wikidata IDs: look up any industry or type at https://www.wikidata.org (search, copy the Q-number).
+# OSM tags: https://wiki.openstreetmap.org/wiki/Map_features
+# NAICS codes: https://www.census.gov/naics/
+
+hotels-dallas:
+  source: osm
+  area: Dallas
+  tags: ["tourism=hotel"]
+
+restaurants-austin:
+  source: osm
+  area: Austin
+  tags: ["amenity=restaurant"]
+
+dental-clinics-chicago:
+  source: osm
+  area: Chicago
+  tags: ["amenity=dentist", "healthcare=dentist"]
+
+car-dealers-phoenix:
+  source: osm
+  area: Phoenix
+  tags: ["shop=car"]
+
+software-companies-us:
+  source: wikidata
+  industries: [Q880371]        # software industry
+  country: Q30                 # United States
+  min_employees: 50
+
+hotel-chains-worldwide:
+  source: wikidata
+  instance_of: [Q507619]       # hotel chain
+  limit: 1000
+
+us-public-companies:
+  source: wikidata
+  instance_of: [Q891723]       # public company
+  country: Q30
+  min_employees: 500
+
+hotels-texas-market-size:
+  source: census
+  naics: "721110"              # Hotels (except casino hotels) and motels
+  state: "48"                  # Texas (state FIPS code)
+  year: 2021                   # newer years may code industries in NAICS 2022: set naics_var: NAICS2022
+
+software-publishers-california-market-size:
+  source: census
+  naics: "511210"              # Software publishers (NAICS 2017 code; NAICS 2022 uses 513210)
+  state: "06"
+  year: 2021

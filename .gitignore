@@ -1,0 +1,17 @@
+# local config and secrets
+.env
+*.key
+service-account*.json
+
+# run output (may contain your account list)
+out/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# os
+.DS_Store
